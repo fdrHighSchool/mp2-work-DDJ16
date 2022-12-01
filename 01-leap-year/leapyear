@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+    int o;
+    System.out.println("Enter any year");
+    
+    o = s.nextInt();
+    
+    System.out.println("the year is " + leapYear(o));
+    
+  }// end of main
+  public static boolean leapYear(int o){
+    boolean tOf = true;
+
+    if (o%4 != 0){
+      return false;
+    }
+    else if(o%4 == 0 && o%100 != 0){
+      return tOf;
+    }
+    else if(o%4 == 0 && o%100 == 0 && o%400 == 0){
+      return tOf;
+    }
+    else{
+     return false;
+    }
+  }//end of leapYear  
+}
