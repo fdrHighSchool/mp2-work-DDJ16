@@ -1,0 +1,36 @@
+class Main {
+  public static void main(String[] args) { 
+    square(6,6);
+    System.out.println();
+    rectangle(2,10);
+    System.out.println();
+    triangle(5);
+    }//end of main
+    public static void square(int s1, int s2){
+    for(int side = 0; side<s1; side++){
+      for( int side2 = 0; side2 < s2; side2++){
+        
+        System.out.print("* ");
+    }//end of side2
+        System.out.println();
+    }//end of side
+  }//end of square method
+  public static void rectangle(int l,int w){
+    for(int row = 0; row<l; row++){
+      for( int col = 0; col < w; col++){
+        
+        System.out.print("* ");
+    }//end of col
+        System.out.println();
+    }//end of row 
+  }//end of rectangle method
+  public static void triangle(int h){
+    for(int i = 1; i<=h; i++){
+      for(int j = 1;j <= i; j++){
+        System.out.print("* ");
+      }//end of j
+       System.out.println();
+    }//end of i
+  }//end of triangle
+}//end of main
+  
