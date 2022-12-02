@@ -1,0 +1,19 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println(countQuarters(2575));
+    System.out.println(countQuarters(8));
+  }//end of main
+
+  public static int countQuarters(int cents){
+    String cent = Integer.toString(cents);
+    if (cent.length()<2){
+      return 0;
+    }//end of if
+    else{
+      String remain = cent.substring(cent.length()-2);
+      int remaining = Integer.valueOf(remain);
+      int noq = remaining/25;
+      return noq;
+    }//end of else
+  }//end of countQuarter
+}//end of Class
